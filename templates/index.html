@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:rgb(255, 0, 0)">
+         <br><br><h3>{{ prediction_text }}</h3>
+        <form action="{{ url_for('predict')}}" method="post" autocomplete="off" validate>
+            <!-- <h2>Predictive analysis</h2> -->
+            <p class="h1" style="color:rgb(0, 0, 0)">Heart Disease Prediction</p>
+
+            <br>
+            <br>
+            <p class="h4" style="color:rgb(67, 11, 235)">What is the age of Patient?</p>
+            <br>
+            <input id="second" name="a" required>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">How much is the Tresbps? (Between 0 to 200)</p>
+            <br>
+            <input id="third" name="b" required>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">How much is the chol? (Between 0 to 600)</p>
+            <br>
+            <input id="fourth" name="c" required>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">How much is the thalach? (Between 0 to 220)</p>
+            <br>
+            <input id="fifth" name="d" required>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">How much is the oldpeak ? (Between 0.0 to 6.5)</p>
+            <br>
+            <input id="sixth" name="e" required>
+            <br>
+            <br>
+<!--            all numerical features done-->
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's Gender?</p><br>
+            <select name="gender_type" id="gender_type" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's Chest Pain Type?</p><br>
+            <select name="cp" id="cp" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's Fasting Blood Sugar Type?</p><br>
+            <select name="fbs" id="fbs" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's Resting Electrocardiographic Results?</p><br>
+            <select name="restecg" id="restecg" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">Does Patient have Exercise Induced Angina?</p><br>
+            <select name="exang" id="exang" required>
+                <option value="0">0 (No)</option>
+                <option value="1">1 (Yes)</option>
+
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is the slope of the peak exercise ST segment of Patient?</p><br>
+            <select name="slope" id="slope" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's number of major vessels (0-3) colored by flourosopy?</p><br>
+            <select name="ca" id="ca" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+
+            </select>
+            <br>
+            <br>
+
+            <p class="h4" style="color:rgb(67, 11, 235)">What is Patient's Thalassemai Type?</p><br>
+            <select name="thal" id="thal" required>
+                <option value="0">0 (Null)</option>
+                <option value="1">1 (Normal)</option>
+                <option value="2">2 (Fixed Defect)</option>
+                <option value="3">3 (Reversible Defect)</option>
+            </select>
+            <br>
+            <br>
+
+
+            <br>
+            <br>
+              <button  id="sub" type="submit ">
+                <p class="h4" style="color:rgb(67, 11, 235)">
+                    Predict
+                </p>
+              </button>
+            <br>
+        </form>
+
+<!--             <br><br><h3>{{ prediction_text }}</h3>-->
+    </div>
+
+
+
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            padding: 0px;
+        }
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #gender_type,#cp,#fbs,#restecg,#exang,#slope,#ca,#thal{
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+
+        #gender:hover,#cp:hover,#fbs:hover,#restecg:hover ,#exang:hover,#slope:hover,#ca:hover,#thal:hover{
+            background-color: rgb(164, 171, 173);
+        }
+
+        #sub {
+            width: 400px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: rgb(164, 171, 173);
+        }
+
+        #first,#second,#third,#fourth,#fifth,#sixth {
+            border-radius: 7px;
+            height: 40px;
+            font-size: 30px;
+            text-align: center;
+            width:100px
+        }
+
+
+    </style>
+
+
+
+</body>
+
+</html>
