@@ -10,9 +10,6 @@ Such classifiers are used to know if the person is a heart patient or not just f
 #### Here I have used Logistic Regression as Binary Classification Algorithm of Machine Learning to get best possible results.
 
 ## 🎥 Demo Video 
-
-
-
 https://user-images.githubusercontent.com/84613393/198876725-a3d6f3af-ae78-425f-8609-53fba3e9138d.mp4
 
 
@@ -35,9 +32,16 @@ The data set used for this notebook is from the Public Health Dataset from Kaggl
 <li>Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</li>
 
 
-## 🔁 Pipeline  - LEFT
+## 🔁 Pipeline 
 <ul>
-  <li> </li>
+  <li> The dataset is first seperated on basis of categorical and continuous values.</li>
+  <li> Then Exploratory Data Analysis is applied on the data to see the interactions between different columns.</li>
+  <li> Making dummies of the categorical values. </li>
+  <li> using Standard Scling to scale the continuous values.</li>
+  <li> Obtaining Accuracy Score and Confusion Matrix.</li>
+  <li> Train Test Splitting the data and then applying Logistic Regression to Classify the data to obtain result.</li>
+  <li> Picklng and Dumping the model and using it in backend to obtain the results based on input of the user. </li>
+  
 </ul>
 
 ## 🎯 Deployment at Heroku
