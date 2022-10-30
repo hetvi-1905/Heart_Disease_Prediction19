@@ -4,6 +4,10 @@
 ## 🖊 Brief Intro 
 This Model predicts if the user has Heart Disease or not by using Logistic Regression in Machine Learning.
 
+## 🎯 Deployment at Heroku
+I have deployed the ML-Pipeline on a Web application using Flask.
+https://heart-disease-prediction19.herokuapp.com/
+
 ## 📌 Importance 
 Such classifiers are used to know if the person is a heart patient or not just from the parameters inserted by the user.Heart disease (HD) is one of the most common diseases nowadays, due to number of contributing factors, such as high blood pressure, diabetes, cholesterol fluctuation, exhaustion and many others. An early diagnosis of such disease has been sought for many years, and many data analytics tools have been applied to help health care providers to identify some of the early signs of HD. Many tests can be performed on potential patients to take the extra precautions measures to reduce the effect of having such a disease, and reliable methods to predict early stages of HD.Number of Machine Learning algorithms were applied for the purpose of classification and prediction of HD dataset, and many promising results were presented in the literature. 
 
@@ -44,9 +48,7 @@ The data set used for this notebook is from the Public Health Dataset from Kaggl
   
 </ul>
 
-## 🎯 Deployment at Heroku
-I have deployed the ML-Pipeline on a Web application using Flask.
-https://heart-disease-prediction19.herokuapp.com/
+
   
   ## 🔨 Tech-Stack
  <ul>
