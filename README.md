@@ -49,12 +49,11 @@ Landing Page
 ![Screenshot (505)](https://user-images.githubusercontent.com/84613393/198876843-9668c09d-5a55-447e-915c-1121ddf730ca.png)
 
 User Input
-![Screenshot (506)](https://user-images.githubusercontent.com/84613393/198876856-8ec46fe0-9d00-49b9-b7ee-e435b289930a.png)
-![Screenshot (507)](https://user-images.githubusercontent.com/84613393/198876869-9ff48404-46d2-4085-8603-fd64add94d2a.png)
+![Screenshot (510)](https://user-images.githubusercontent.com/84613393/198876967-c3df0850-4048-4bf8-b418-a40b4a0ff825.png)
+![Screenshot (511)](https://user-images.githubusercontent.com/84613393/198876970-8acdaaec-c6b7-47fb-8a8e-39bc0dfd44d0.png)
 
 Output
-![Screenshot (508)](https://user-images.githubusercontent.com/84613393/198876873-6ed8dcf5-39b4-4c97-8d45-639805d52b66.png)
-
+![Screenshot (509)](https://user-images.githubusercontent.com/84613393/198876941-6e90f219-70fe-4507-a5e2-b98b33458633.png)
 
  ## 🔨 Tech-Stack
  <ul>
