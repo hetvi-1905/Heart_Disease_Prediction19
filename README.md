@@ -47,6 +47,13 @@ The data set used for this notebook is from the Public Health Dataset from Kaggl
 ## 🎯 Deployment at Heroku
 I have deployed the ML-Pipeline on a Web application using Flask.
 https://heart-disease-prediction19.herokuapp.com/
+  
+  ## 🔨 Tech-Stack
+ <ul>
+  <li> Front-end:Html,CSS,Javascript </li>
+  <li> Back-end:Flask </li>
+  <li> Machine Learning Libraries:Numpy, Pandas,scikit-learn,Sklearn,Logistic Regression</li>
+ </ul>
 
 ## 📷 Screenshots  
 Landing Page 
@@ -59,9 +66,4 @@ User Input
 Output
 ![Screenshot (509)](https://user-images.githubusercontent.com/84613393/198876941-6e90f219-70fe-4507-a5e2-b98b33458633.png)
 
- ## 🔨 Tech-Stack
- <ul>
-  <li> Front-end:Html,CSS,Javascript </li>
-  <li> Back-end:Flask </li>
-  <li> Machine Learning Libraries:Numpy, Pandas,scikit-learn,Sklearn,Logistic Regression</li>
- </ul>
+
