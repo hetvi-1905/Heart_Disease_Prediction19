@@ -9,7 +9,11 @@ Such classifiers are used to know if the person is a heart patient or not just f
 
 #### Here I have used Logistic Regression as Binary Classification Algorithm of Machine Learning to get best possible results.
 
-## 🎥 Demo Video _ LEFT
+## 🎥 Demo Video 
+
+
+
+https://user-images.githubusercontent.com/84613393/198876725-a3d6f3af-ae78-425f-8609-53fba3e9138d.mp4
 
 
 
@@ -40,12 +44,16 @@ The data set used for this notebook is from the Public Health Dataset from Kaggl
 I have deployed the ML-Pipeline on a Web application using Flask.
 https://heart-disease-prediction19.herokuapp.com/
 
-## 📷 Screenshots  -LEFT
+## 📷 Screenshots  
 Landing Page 
+![Screenshot (505)](https://user-images.githubusercontent.com/84613393/198876843-9668c09d-5a55-447e-915c-1121ddf730ca.png)
 
 User Input
+![Screenshot (506)](https://user-images.githubusercontent.com/84613393/198876856-8ec46fe0-9d00-49b9-b7ee-e435b289930a.png)
+![Screenshot (507)](https://user-images.githubusercontent.com/84613393/198876869-9ff48404-46d2-4085-8603-fd64add94d2a.png)
 
 Output
+![Screenshot (508)](https://user-images.githubusercontent.com/84613393/198876873-6ed8dcf5-39b4-4c97-8d45-639805d52b66.png)
 
 
  ## 🔨 Tech-Stack
