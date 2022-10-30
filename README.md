@@ -13,7 +13,7 @@ Such classifiers are used to know if the person is a heart patient or not just f
 
 
 
-## 📄 Dataset - LEFT
+## 📄 Dataset 
 The data set used for this notebook is from the Public Health Dataset from Kaggle which has following columns:
 <ol>
 <li>Age</li>
