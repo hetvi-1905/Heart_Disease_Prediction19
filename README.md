@@ -30,7 +30,7 @@ The data set used for this notebook is from the Public Health Dataset from Kaggl
 <li>Maximum heart rate achieved </li>
 <li>Exercise induced angina</li>
 <li>Oldpeak = ST depression induced by exercise relative to rest</li>
-li>The slope of the peak exercise ST segment</li>
+<li>The slope of the peak exercise ST segment</li>
 <li>Number of major vessels (0-3) colored by flourosopy</li>
 <li>Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</li>
 
